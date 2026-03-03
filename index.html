@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio – Geetika</title>
   <style>
     body {
       font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
@@ -12,10 +12,12 @@
       background-color: #FFF0F3;
       color: #2B2D42;
     }
+
+    /* Header Navigation */
     header {
       background: #D7263D;
       color: white;
-      padding: 30px;
+      padding: 20px;
       text-align: center;
     }
     nav a {
@@ -27,20 +29,78 @@
     nav a:hover {
       color: #FF8FA3;
     }
-    main {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
+
+    /* Hero Section */
+    .hero {
+      background: url('assets/banner.jpg') no-repeat center center;
+      background-size: cover;
+      color: #FFF0F3;
+      padding: 60px 20px;
     }
-    h2 {
-      color: #FF4D6D;
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+    }
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .hero-text p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Highlights Section */
+    .highlights {
+      background-color: #FF8FA3;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .highlights h2 {
+      color: #2B2D42;
+      margin-bottom: 20px;
+    }
+    .highlights ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .highlights li {
+      background: #FFF0F3;
+      color: #2B2D42;
+      padding: 10px 15px;
+      border-radius: 6px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
+  <!-- Header Navigation -->
   <header>
     <h1>Geetika Moolchandani</h1>
-    <p>Senior Engineer | MBA | B.Tech </p>
     <nav>
       <a href="about.html">About</a>
       <a href="skills.html">Skills</a>
@@ -50,9 +110,32 @@
     </nav>
   </header>
 
-  <main>
-    <h2>Welcome</h2>
-    <p>I bring strong engineering experience and a product mindset — stakeholder communication, roadmap planning, feature prioritization, cross‑functional collaboration, and data‑driven decision making.</p>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Welcome</h1>
+        <p>With experience in systems from servers to mobile phones, I bring strong engineering expertise and a product mindset — stakeholder communication, roadmap planning, feature prioritization, cross‑functional collaboration, and data‑driven decision making.</p>
+        <p>Navigate to explore my projects, skills, and blogs.</p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/illustration01.png" alt="Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights">
+    <h2>Highlights</h2>
+    <ul>
+      <li>Senior Systems Engineer</li>
+      <li>MBA</li>
+      <li>B.Tech</li>
+      <li>Event Manager</li>
+      <li>Volunteer</li>
+      <li>Product Innovator</li>
+      <li>Emerging Manager</li>
+    </ul>
+  </section>
 </body>
 </html>
