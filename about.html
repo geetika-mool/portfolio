@@ -4,32 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
+  <style>
+    body {
+      font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FFF0F3;
+      color: #2B2D42;
+      line-height: 1.6;
+    }
+    header {
+      background: #D7263D;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #FFF0F3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #FF8FA3;
+    }
+    main {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #FF4D6D;
+      margin-bottom: 20px;
+    }
+    .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .about-container img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #FF4D6D;
+    }
+    .about-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
-<body style="font-family:Open Sans, sans-serif; margin:20px;">
-  <header style="background:#0a3d62; color:white; padding:15px; text-align:center;">
+<body>
+  <header>
     <h1>About Me</h1>
     <nav>
-      <a href="index.html" style="color:white; margin:0 10px;">Home</a>
-      <a href="skills.html" style="color:white; margin:0 10px;">Skills</a>
-      <a href="projects.html" style="color:white; margin:0 10px;">Projects</a>
-      <a href="resume.pdf" style="color:white; margin:0 10px;">Resume</a>
-      <a href="contact.html" style="color:white; margin:0 10px;">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.pdf">Resume</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main style="padding:20px; max-width:800px; margin:auto;">
+  <main>
     <h2>My Journey</h2>
-    <p>Hi! I’m a senior software engineer with more than six years of experience building and debugging complex systems across infrastructure, cloud servers, and mobile devices. My career has taken me through IBM, Qualcomm, and Arm. At IBM, I worked on enterprise‑grade Power servers. At Qualcomm, I contributed to Android phones powered by Snapdragon. At Arm, I gained valuable expertise in public and customer releases through the Lumex offering.</p>
+    <div class="about-container">
+      <!-- Image Section -->
+      <img src="assets/illustration01.png" alt="Profile illustration">
 
-    <p>I have been fortunate to gain exposure across a broad spectrum of computing devices. In server environments, resources such as memory, cores, and power budgets are relatively abundant, and the challenge lies in maximizing utilization while delivering peak performance at scale. In contrast, mobile devices operate under tight constraints — limited memory, fewer cores, and strict power efficiency requirements — where the challenge shifts to optimizing performance within narrow resource boundaries. These highlights reflect the breadth of my journey across platforms, silicon, and software ecosystems. Each project has deepened my understanding of scale, performance trade‑offs, and the craft of bridging hardware with software to deliver impactful solutions.</p>
+      <!-- Text Section -->
+      <div class="about-text">
+        <p>Hi! I’m a senior software engineer with more than six years of experience building and debugging complex systems across infrastructure, cloud servers, and mobile devices. My career has taken me through IBM, Qualcomm, and Arm. At IBM, I worked on enterprise‑grade Power servers. At Qualcomm, I contributed to Android phones powered by Snapdragon. At Arm, I gained valuable expertise in public and customer releases through the Lumex offering.</p>
 
-    <p>Along the way, I became fluent in Python, C, Bash, Linux, and Android, and developed a knack for solving problems that don’t have easy answers. Debugging has often felt like detective work to me, and I’ll admit I enjoy the chase of tracking down elusive issues (I sometimes wonder if that has something to do with my teenage reading preference for Sherlock Holmes). My technical foundation is complemented by strong skills in automation, Agile processes, and applied GenAI and agentic AI workflows, which I use to streamline operations, uncover insights, and align engineering outcomes with business goals.</p>
+        <p>I have been fortunate to gain exposure across a broad spectrum of computing devices. In server environments, resources such as memory, cores, and power budgets are relatively abundant, and the challenge lies in maximizing utilization while delivering peak performance at scale. In contrast, mobile devices operate under tight constraints — limited memory, fewer cores, and strict power efficiency requirements — where the challenge shifts to optimizing performance within narrow resource boundaries. These highlights reflect the breadth of my journey across platforms, silicon, and software ecosystems. Each project has deepened my understanding of scale, performance trade‑offs, and the craft of bridging hardware with software to deliver impactful solutions.</p>
 
-    <p>My MBA in Strategy & Consulting from BITS Pilani expanded my perspective beyond systems and code into product vision, business strategy, and organizational leadership. It gave me the tools to think critically about markets, craft product roadmaps, and drive execution in cross‑functional teams. I thrive at the intersection of engineering and product, where technical depth meets strategic decision‑making.</p>
+        <p>Along the way, I became fluent in Python, C, Bash, Linux, and Android, and developed a knack for solving problems that don’t have easy answers. Debugging has often felt like detective work to me, and I’ll admit I enjoy the chase of tracking down elusive issues (I sometimes wonder if that has something to do with my teenage reading preference for Sherlock Holmes). My technical foundation is complemented by strong skills in automation, Agile processes, and applied GenAI and agentic AI workflows, which I use to streamline operations, uncover insights, and align engineering outcomes with business goals.</p>
 
-    <p>Beyond the technical and strategic, I’m deeply committed to diversity, equity, and inclusion. I believe innovation is strongest when it’s inclusive, and I actively champion DEI initiatives in the workplace. I also enjoy mentoring school and college students, as well as early‑career women — helping them navigate challenges and discover their own passions is one of the most rewarding parts of my professional life. I equally enjoy managing and organizing events, from kernel meetups to tech and networking sessions within organizations. These experiences have sharpened my skills in planning, collaboration, and building meaningful professional communities.</p>
+        <p>My MBA in Strategy & Consulting from BITS Pilani expanded my perspective beyond systems and code into product vision, business strategy, and organizational leadership. It gave me the tools to think critically about markets, craft product roadmaps, and drive execution in cross‑functional teams. I thrive at the intersection of engineering and product, where technical depth meets strategic decision‑making.</p>
 
-    <p>In short, I build, I strategize, I mentor, and I advocate for inclusive innovation. And yes, I still get a little too excited when I automate something that saves hours of manual work.</p>
+        <p>Beyond the technical and strategic, I’m deeply committed to diversity, equity, and inclusion. I believe innovation is strongest when it’s inclusive, and I actively champion DEI initiatives in the workplace. I also enjoy mentoring school and college students, as well as early‑career women — helping them navigate challenges and discover their own passions is one of the most rewarding parts of my professional life. I equally enjoy managing and organizing events, from kernel meetups to tech and networking sessions within organizations. These experiences have sharpened my skills in planning, collaboration, and building meaningful professional communities.</p>
+
+        <p>In short, I build, I strategize, I mentor, and I advocate for inclusive innovation. And yes, I still get a little too excited when I automate something that saves hours of manual work.</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
